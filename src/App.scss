@@ -1,9 +1,25 @@
 .app {
+  nav {
+    background: red;
+    position: fixed;
+    width: 100%;
+    .container {
+      padding: 0;
+      h1 {
+        padding: 30px;
+        color: #fff;
+        display: inline-block;
+        background: rgba(#fff, 0.4);
+      }
+    }
+  }
   .container {
     max-width: 1000px;
     padding: 50px 0;
     margin: auto;
+    width: 95%;
     .slots {
+      margin-top: 70px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -35,12 +51,13 @@
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
+      z-index: 5;
       .content {
         width: 90%;
         max-width: 1000px;
         position: absolute;
         border-radius: 5px;
-        top: 45%;
+        top: 50%;
         left: 50%;
         background: #fff;
         transform: translate(-50%, -50%);
@@ -92,6 +109,100 @@
             }
           }
         }
+      }
+    }
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #eee;
+    h4 {
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: grey;
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .app {
+    nav {
+      .container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .app {
+    .container {
+      .slots {
+        .slot {
+          width: 31%;
+        }
+      }
+      .form-main {
+        .content {
+          min-height: 100%;
+          width: 100%;
+          h2 {
+            padding: 15px;
+            font-size: 1.5rem;
+          }
+          .main-form {
+            padding: 20px;
+            .field {
+              margin-bottom: 20px;
+              label {
+                margin-bottom: 10px;
+              }
+              input {
+                padding: 15px;
+              }
+              .err {
+                margin-top: 5px;
+                display: block;
+                color: red;
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .app {
+    nav {
+      .container {
+        h1 {
+          padding: 15px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .container {
+      .slots {
+        margin-top: 45px;
+        .slot {
+          width: 48%;
+          padding: 15px 0;
+          font-size: 1rem;
+        }
+      }
+    }
+    footer {
+      .container {
+        padding: 20px 0;
       }
     }
   }

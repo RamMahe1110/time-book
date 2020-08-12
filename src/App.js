@@ -137,6 +137,11 @@ class App extends React.Component {
 
     return (
       <div className="app">
+        <nav>
+          <div className="container">
+            <h1 className="brand-name">TIMEBOOK</h1>
+          </div>
+        </nav>
         <div className="container">
           <Slots onSlotSelect={this.onSlotSelect} slots={slots} />
           {selectedSlot ? (
@@ -149,6 +154,13 @@ class App extends React.Component {
             />
           ) : null}
         </div>
+        <footer>
+          <div className="container">
+            <h4 className="text">
+              Developed by <span>Ram Maheshwari</span>
+            </h4>
+          </div>
+        </footer>
       </div>
     )
   }
