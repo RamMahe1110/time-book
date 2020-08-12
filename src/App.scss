@@ -1,6 +1,6 @@
 .app {
   nav {
-    background: red;
+    background: rgb(255, 75, 31);
     position: fixed;
     width: 100%;
     .container {
@@ -29,10 +29,10 @@
         border-radius: 5px;
         width: 22%;
         background-color: #fff;
-        border: 2px solid red;
+        border: 2px solid rgb(255, 75, 31);
         text-align: center;
         padding: 25px 0;
-        color: red;
+        color: rgb(255, 75, 31);
         font-size: 1.5rem;
         margin-bottom: 30px;
         .wrap {
@@ -40,7 +40,7 @@
         }
       }
       .booked {
-        background: red;
+        background: rgb(255, 75, 31);
         color: #fff;
       }
     }
@@ -85,7 +85,7 @@
             .err {
               margin-top: 8px !important;
               display: block;
-              color: red;
+              color: rgb(255, 75, 31);
             }
           }
           .decision-makers {
@@ -95,7 +95,7 @@
               margin-bottom: 15px;
               border: none;
               font-size: 1rem;
-              background: red;
+              background: rgb(255, 75, 31);
               color: #fff;
               font-weight: bold;
               border-radius: 5px;
@@ -103,8 +103,8 @@
             }
             .fail {
               background: #fff;
-              color: red;
-              border: 1px solid red;
+              color: rgb(255, 75, 31);
+              border: 1px solid rgb(255, 75, 31);
               font-weight: normal;
             }
           }
@@ -169,7 +169,7 @@
               .err {
                 margin-top: 5px;
                 display: block;
-                color: red;
+                color: rgb(255, 75, 31);
                 font-size: 0.8rem;
               }
             }
