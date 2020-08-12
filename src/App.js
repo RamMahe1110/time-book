@@ -55,10 +55,10 @@ class App extends React.Component {
     if (!phoneNumber.length || !validator.isNumeric(phoneNumber)) {
       isValid = false
       if (!phoneNumber.length) {
-        formErrors.phoneNumberErr = 'Phone number name is required...'
+        formErrors.phoneNumberErr = 'Phone number is required...'
       } else {
         formErrors.phoneNumberErr =
-          'Phone number name should only contain numbers...'
+          'Phone number should only contain numbers...'
       }
     }
 
